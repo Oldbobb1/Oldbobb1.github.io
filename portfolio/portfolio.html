@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+         <div class="logo-container"></div>
+
+          <div class="header-content">   
+            <img src="images/profile.jpeg" alt="Your Photo" class="profile-img">
+            <div class="profile-info">
+                <h1>Dmitry</h1>
+                <p>iOS Developer </p>  
+                <div class="social-links">
+                    <a href="https://github.com/Oldbobb1">
+                        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"" alt="GitHub"/>
+                    </a>
+                    <a href="mailto:therromanov@gmail.com">
+                        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername">
+                        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+                    </a>
+                    <a href="https://t.me/Oldbobb1"target="_blank">
+                        <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2 onclick="toggleAboutText()">About Me</h2>
+            <div id="about-texts" style="display: none;">
+                <p>I am a passionate iOS developer with 2 years of experience in mobile app development. Though I haven't worked on commercial projects yet, I’ve completed two academic projects and one personal project that showcase my skills and dedication to creating functional and elegant applications.</p>
+                <p>My technical expertise includes Swift, UIKit, SwiftUI, Cocoa Touch, SnapKit, and advanced code structuring practices like MVC and functional programming. I am also skilled in tools like Xcode, Git/GitHub, and Swift Package Manager. I enjoy creating frameworks, optimizing code, and working on UX and app architecture, areas that align with my passion for Apple technologies.</p>
+                <p>Currently, I am pursuing a degree in Applied Informatics at Moscow International Academy, where I continue to deepen my understanding of software development. My ultimate goal is to grow professionally and create impactful applications that bring real value to people.</p>
+                <p>In my free time, I enjoy staying active with sports, reading books, listening to music, and engaging in personal growth activities.</p>
+            </div>
+        </section>
+
+         <script>
+          function toggleAboutText() {
+            const aboutText = document.getElementById('about-texts');
+            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
+        }
+        </script>
+        
+        <section id="projects">
+            <h2 onclick="toggleProjects()">Projects</h2>
+            <div class="cards" id="projects-list" style="display: none;">
+                <div class="cards"> 
+                    <div class="card">
+                        <img src="https://via.placeholder.com/250" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>An exciting app that solves real-world problems.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/250" alt="Project 2">
+                        <h3>Project 2</h3>
+                        <p>A creative solution for organizing tasks effectively.</p>
+                     </div>
+                     
+                     <div class="card">
+                        <img src="https://via.placeholder.com/250" alt="Project 3">
+                        <h3>Project 3</h3>
+                        <p>An innovative project that demonstrates my skills.</p>
+                    </div>
+                </div>
+        </section>
+        
+        <script>
+        function toggleProjects() {
+            const projectsList = document.getElementById('projects-list');
+            // Переключение видимости блоков с проектами
+            projectsList.style.display = projectsList.style.display === 'none' ? 'block' : 'none';
+        }
+        </script>
+
+        <!-- <footer>
+            <p>© 2024 Dmitry. All rights reserved.</p>
+        </footer> -->
+
+    </div>
+</body>
+</html>
+
+
+
+
+
