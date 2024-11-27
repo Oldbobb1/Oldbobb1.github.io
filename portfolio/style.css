@@ -67,6 +67,7 @@ section {
     margin-left: 380px;
 }
 
+
 h2 {
     cursor: pointer;
     font-size: 2rem;
@@ -167,7 +168,7 @@ h2 {
 
     .logo-container {
         width: 100%; 
-        height: 70px; 
+        height: 100px; 
         background-image: url('images/logo.jpeg');
         background-size: cover; 
         background-position: center; 
@@ -209,6 +210,11 @@ h2 {
     section {
         margin:  60px;
         /* margin-left: 138px; */
+    }
+
+    section {
+        width: 95%; /* Уменьшение ширины для смартфонов */
+        padding: 15px;
     }
     
     h2 {
@@ -255,3 +261,6 @@ h2 {
         text-align: justify; /* Выравнивание по ширине */
     }
 }
+
+
+
