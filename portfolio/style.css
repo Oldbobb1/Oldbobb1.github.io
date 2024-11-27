@@ -1,4 +1,4 @@
-/* body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -51,8 +51,8 @@
 }
 
 .social-links img {
-    width: 105px;
-    height: 65px;
+    width: 135px;
+    height: 45px;
     transition: transform 0.3s;
 }
 
@@ -70,7 +70,8 @@ section {
 h2 {
     cursor: pointer;
     font-size: 2rem;
-    margin-left: 0px;
+    /* margin-left: 0px; */
+    margin-bottom: 20px;
     transition: color 0.3s ease-in-out;
     }
     
@@ -86,18 +87,18 @@ h2 {
     
     #projects {
         text-align: left;
-        margin-left: 380px;
+        /* margin-left: 380px; */
         border: none;
         font-size: 1.5rem;
     }
-    
+ 
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 20px;
         padding: 20px;
     }
-    
+
     .card {
         background: #fff;
         border-radius: 10px;
@@ -122,7 +123,7 @@ h2 {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
-    
+
     footer {
         text-align: center;
         padding: 20px;
@@ -133,180 +134,81 @@ h2 {
     footer p {
         color: #555;
         font-size: 1rem;
-    } */
+    }
+    
 
-        /* footer {
-            text-align: center;
-            padding: 20px 0;
-            color: #555;
-            margin-top: 50px;
-        }
+    /* footer {
+        text-align: center;
+        padding: 20px 0;
+        color: #555;
+        margin-top: 50px;
+    }
+    footer a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+        transition: color 0.3s;
+    }
+    footer a:hover {
+        color: #ff6b6b;
+     } */
 
-        footer a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
 
-        footer a:hover {
-            color: #ff6b6b;
-        } */
+    .logo-container {
+        width: 100%; 
+        height: 70px; 
+        background-image: url('images/logo.jpeg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    
+    .header-content {
+        flex-direction: column;
+         padding: 10px;
+        text-align: center;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7fb;
-            color: #333;
+    .profile-img {
+        margin: 0 auto 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .social-links img {
+        width: 135px;
+        height: 45px;
+        transition: transform 0.3s;
+    }
+
+    section {
+        margin:  60px;
+        /* margin-left: 138px; */
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* h2 {
+        cursor: pointer;
+        font-size: 2rem;
+        /* margin-left: 0px; */
+        margin-bottom: 20px;
+        transition: color 0.3s ease-in-out;
         }
-        
-        .logo-container {
-            width: 100%;
-            height: 300px;
-            background-image: url('images/logo.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 20px 100px;
-        }
-        
-        .profile-img {
-            flex: 0 0 auto;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            margin-right: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        .profile-info {
-            flex: 1;
-        }
-        
-        .profile-info h1 {
-            font-size: 3rem;
-            margin-bottom: 5px;
-        }
-        
-        .profile-info p {
-            font-size: 1.5rem;
-            color: #555;
-        }
-        
-        .social-links a {
-            margin-right: 10px;
-            text-decoration: none;
-        }
-        
-        .social-links img {
-            width: 105px;
-            height: 65px;
-            transition: transform 0.3s;
-        }
-        
-        .social-links img:hover {
-            transform: scale(1.1);
-        }
-        
-        section {
-            margin: 2% 10%;
-            padding: 20px;
-        }
-        
-        h2 {
-            cursor: pointer;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            transition: color 0.3s ease-in-out;
-        }
-        
-        h2:hover {
-            color: #0056b3;
-        }
-        
-        #about-texts p {
-            text-indent: 30px;
-            line-height: 1.8;
-            font-size: 1.2rem;
-        }
-        
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        footer p {
-            color: #555;
-            font-size: 1rem;
-        }
-        
-        /* Адаптация для мобильных устройств */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                padding: 10px;
-                text-align: center;
-            }
-        
-            .profile-img {
-                margin: 0 auto 20px;
-                width: 150px;
-                height: 150px;
-            }
-        
-            .profile-info h1 {
-                font-size: 2rem;
-            }
-        
-            .profile-info p {
-                font-size: 1rem;
-            }
-        
-            section {
-                margin: 20px 10px;
-            }
-        
-            h2 {
-                font-size: 1.5rem;
-            }
-        
-            .cards {
-                grid-template-columns: 1fr;
-            }
-        }
+     */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
