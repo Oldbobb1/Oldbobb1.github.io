@@ -114,35 +114,6 @@ transform: scale(1.1);
 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 175, 64, 0.8);
 }
 
-
-
-/* About Section */
-
-/* .about {
-    text-align: center;
-}
-.about h2 {
-    font-size: 2.5rem;
-    color: #ffaf40;
-    margin-bottom: 20px;
-}
-.about p {
-    font-size: 1.8rem;
-    max-width: 1600px;
-    margin: 0 auto;
-    line-height: 1.5;
-    text-indent:30px;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: -50px;
-} */
-
-
 /* Основные стили секции */
 .about {
     text-align: center;
@@ -209,72 +180,6 @@ text-align: center;
 color: #ffaf40;
 font-size: 1.8rem;
 }
-/* 
-.projects h2 {
-    font-size: 2.5rem;
-    color: #ffaf40;
-    margin-bottom: 20px;
-    text-align: center;
-} */
-
-
-/* .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 10px;
-    padding: 0px;
-} 
-
-.project-card {
-    background: #2e2e47;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s;
-    text-align: center;
-    padding: 5px;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.project-card img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.project-card h3 {
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1.2rem;
-    color: #ffaf40;
-}
-
-
-.project-card p {
-padding: 0 15px 10px;
-color: #c0c0c0; 
-font-size: 17px; 
-line-height: 1.3; 
-margin-top: 1px; 
-text-align: justify;
-}
-
-.project-card a {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px 10px;
-    background: #ffaf40;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    width: fit-content;
-    font-size: 1rem;
-} */
-
 
 .projects {
     display: grid;
@@ -331,40 +236,6 @@ text-align: justify;
     font-size: 0.9rem; /* Уменьшен размер текста кнопки */
     width: fit-content;
 }
-
-
-/* Skills Section */
-/* .skills {
-    text-align: center;
-}
-.skills h2 {
-    font-size: 2.5rem;
-    color: #ffaf40;
-    margin-bottom: 30px;
-}
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-.skill {
-    padding: 15px 30px;
-    background: linear-gradient(to right, #ffaf40, #ffc780);
-    color: #333;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    transition: transform 0.3s ease;
-}
-.skill:hover {
-    transform: scale(1.1);
-} */
-
-
-
-
 
 /* Секция Skills */
 .skills {
@@ -430,16 +301,6 @@ text-align: justify;
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Contact Section */
 .contact {
     background: #1e1e2f;
@@ -481,257 +342,70 @@ text-align: justify;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #282845);
-    color: #fff;
-    overflow-x: hidden;
-}
-
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(30, 30, 47, 0.9);
-    padding: 15px 30px;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffaf40;
-}
-
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: url('images/fon3.jpg') center/cover no-repeat;
-    color: whitesmoke;
-    padding: 0 20px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-}
-
-.hero .btn {
-    background: #ffaf40;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.hero .btn:hover {
-    background: #ffc780;
-}
-
-
-.about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about p {
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: #2e2e47;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.skills-list {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.contact .social-links a {
-    margin: 0 10px;
-    color: #ffc780;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.contact .social-links a:hover {
-    color: #fff;
-} */
-
-
-
-
 /* Адаптация для мобильных устройств */
 @media (max-width: 599px) {
-
-    .logo-container {
-        width: 100%; 
-        height: 100px; 
-        background-image: url('images/logo.jpeg');
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat;
+    /* Уменьшение шрифтов для текста */
+    body {
+        font-size: 14px;
     }
-    
-    .header-content {
+
+    nav ul {
+        display: none; /* Прячем меню по умолчанию */
         flex-direction: column;
-         padding: 10px;
-        text-align: center;
+        background: rgba(30, 30, 47, 0.9);
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
     }
 
-    .profile-img {
-        margin: 0 auto 20px;
-        width: 150px;
-        height: 150px;
+    nav ul.active {
+        display: flex; /* Показываем меню при клике */
     }
 
-    .profile-info h1 {
-        font-size: 2rem;
+    nav .burger {
+        display: block; /* Показываем иконку меню */
+        cursor: pointer;
     }
-    
-    .profile-info p {
+
+    .hero h1 {
+        font-size: 2rem; /* Уменьшаем размер заголовков */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Уменьшаем размер описания */
+    }
+
+    .hero .btn {
+        padding: 10px 20px; /* Уменьшаем отступы кнопки */
         font-size: 1rem;
     }
 
+    .about-container {
+        flex-direction: column; /* Переводим секции в одну колонку */
+        gap: 20px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr; /* Одна колонка для проектов */
+    }
+
+    .skills-category {
+        width: 100%; /* Растягиваем категории навыков */
+    }
+
+    .project-card {
+        width: 100%; /* Уменьшаем ширину карточек проектов */
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
     .social-links img {
-        width: 135px;
-        height: 45px;
-        transition: transform 0.3s;
-    }
-
-    #about-texts p {
-        text-indent:10px;
-        line-height: 1.6;
-        font-size: 1.2rem;
-    }
-    
-    section {
-        margin:  60px;
-        /* margin-left: 138px; */
-    }
-
-    section {
-        width: 95%; /* Уменьшение ширины для смартфонов */
-        padding: 15px;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-
-
-    /* .cards {
-        grid-template-columns: 1fr;
-    } */
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .card {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 5px;
-        text-align: center; 
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card img {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-    }
-
-    .description {
-        color:  #808080; /* Серый цвет */
-        font-size: 17px; /* Размер шрифта */
-        line-height: 1.3; /* Межстрочный интервал */
-        margin-top: 1px; /* Отступ сверху */
-        text-align: justify; /* Выравнивание по ширине */
+        width: 120px;
+        height: 35px;
     }
 }
 
