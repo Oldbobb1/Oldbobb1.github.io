@@ -1,97 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-     <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of an iOS Developer showcasing skills, projects, and contact information.">
+    <title>Portfolio | iOS Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-         <div class="logo-container"></div>
+<body>
+    <nav>
+        <div class="logo">iOS Developer</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#text">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-          <div class="header-content">   
-            <img src="images/profile.jpeg" alt="Your Photo" class="profile-img">
-            <div class="profile-info">
-                <h1>Dmitry</h1>
-                <p>iOS Developer </p>  
-                <div class="social-links">
-                    <a href="https://github.com/Oldbobb1">
-                        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"" alt="GitHub"/>
-                    </a>
-                    <a href="mailto:therromanov@gmail.com">
-                        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername">
-                        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-                    </a>
-                    <a href="https://t.me/Oldbobb1"target="_blank">
-                        <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
-                    </a>
-                </div>
-            </div>
+    <div class="hero">
+        <h1>Dzmitry</h1>
+        <p>iOS Developer</p>
+        <a href="#text" class="btn">View Projects</a>
+    </div>
+
+<section class="profile" id="profile-img">
+    <img src="images/profile.jpeg" alt="Profile Photo" class="profile-img">
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <!-- Кто вы -->
+        <div class="about-column">
+            <h3>Who I Am</h3>
+            <p>
+                I am a passionate iOS developer with over 2 years of experience in mobile app development. Although I haven't worked on commercial projects yet, I’ve completed two academic projects and one personal project, which highlight my dedication to creating elegant and functional applications.
+            </p>
         </div>
 
-        <section id="about">
-            <h2 onclick="toggleAboutText()">About Me</h2>
-            <div id="about-texts" style="display: none;">
-                <p>I am a passionate iOS developer with 2 years of experience in mobile app development. Though I haven't worked on commercial projects yet, I’ve completed two academic projects and one personal project that showcase my skills and dedication to creating functional and elegant applications.</p>
-                <p>My technical expertise includes Swift, UIKit, SwiftUI, Cocoa Touch, SnapKit, and advanced code structuring practices like MVC and functional programming. I am also skilled in tools like Xcode, Git/GitHub, and Swift Package Manager. I enjoy creating frameworks, optimizing code, and working on UX and app architecture, areas that align with my passion for Apple technologies.</p>
-                <p>Currently, I am pursuing a degree in Applied Informatics at Moscow International Academy, where I continue to deepen my understanding of software development. My ultimate goal is to grow professionally and create impactful applications that bring real value to people.</p>
-                <p>In my free time, I enjoy staying active with sports, reading books, listening to music, and engaging in personal growth activities.</p>
-            </div>
-        </section>
+        <!-- Навыки -->
+        <div class="about-column">
+            <h3>Skills</h3>
+            <p>
+                My expertise includes Swift, UIKit, SwiftUI, Cocoa Touch, SnapKit, and advanced practices like MVC and functional programming. I am proficient with tools like Xcode, Git/GitHub, and Swift Package Manager. For a detailed skills list, see the <a href="#skills">Skills</a> section below.
+            </p>
+        </div>
 
-         <script>
-          function toggleAboutText() {
-            const aboutText = document.getElementById('about-texts');
-            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
-        }
-        </script>
-        
-        <section id="projects">
-            <h2 onclick="toggleProjects()">Projects</h2>
-            <div class="cards" id="projects-list" style="display: none;">
-                <div class="cards"> 
-                    <div class="card" onclick="window.open('https://github.com/Oldbobb1/ElementBuilder', '_blank')">
-                        <img src="logoProj/ElementBuilder.jpeg" alt="ElementBuilder">
-                        <h3>ElementBuilder</h3>
-                        <p class="description">A tool to simplify the development of user interfaces. It provides a convenient API for creating, configuring and managing UI components in iOS apps. With its help, developers can focus on logic and design, avoiding unnecessary code duplication.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://via.placeholder.com/250" alt="Project 2">
-                        <h3>Project 2</h3>
-                        <p class="description">A creative solution for organizing tasks effectively.</p>
-                     </div>
-                     
-                     <div class="card">
-                        <img src="https://via.placeholder.com/250" alt="Project 3">
-                        <h3>Project 3</h3>
-                        <p class="description">An innovative project that demonstrates my skills.</p>
-                    </div>
-                </div>
-        </section>
+        <!-- Образование -->
+        <div class="about-column">
+            <h3>Education</h3>
+            <p>
+                Currently, I am pursuing a degree in Applied Informatics at Moscow International Academy, where I am deepening my understanding of software development and mobile technologies.
+            </p>
+        </div>
 
-        <script>
-        function toggleProjects() {
-            const projectsList = document.getElementById('projects-list');
-            // Переключение видимости блоков с проектами
-            projectsList.style.display = projectsList.style.display === 'none' ? 'block' : 'none';
-        }
-        </script>
-
-        <!-- <footer>
-            <p>© 2024 Dmitry. All rights reserved.</p>
-        </footer>  -->
-
+        <!-- Интересы -->
+        <div class="about-column">
+            <h3>Interests</h3>
+            <p>
+                In my free time, I enjoy staying active with sports, reading books, listening to music, and engaging in personal growth activities. These hobbies allow me to maintain balance and find inspiration for creative work.
+            </p>
+        </div>
     </div>
+</section>
+
+
+   
+
+    <section class="projec-text" id="text">
+        <h1>Projects</h1>
+    </section>
+    
+    <section class="projects container" id="projects">
+        <div class="projects">
+            <div class="project-card">
+                <img src="logoProj/ElementBuilder.jpeg" alt="Project 1">
+                <h3>ElementBuilder</h3>
+                <p>A tool to simplify the development of user interfaces. It provides a convenient API for creating, configuring and managing UI components in iOS apps. With its help, developers can focus on logic and design, avoiding unnecessary code duplication.</p>
+                <a href="https://github.com/Oldbobb1/ElementBuilder" target="_blank"> View on GitHub </a>
+            </div>
+            <!-- <div class="project-card">
+                <img src="logoProj/ElementBuilder.jpeg" alt="Project 2">
+                <h3>Finance Tracker</h3>
+                <p>Manage finances with detailed insights and charts.</p>
+                <a href="https://github.com/Oldbobb1" target="_blank"> View on GitHub </a>
+            </div>
+            <div class="project-card">
+                <img src="logoProj/ElementBuilder.jpeg" alt="Project 2">
+                <h3>Finance Tracker</h3>
+                <p>Manage finances with detailed insights and charts.</p>
+                <a href="https://github.com/Oldbobb1" target="_blank"> View on GitHub </a>
+            </div>
+            <div class="project-card">
+                <img src="logoProj/ElementBuilder.jpeg" alt="Project 2">
+                <h3>Finance Tracker</h3>
+                <p>Manage finances with detailed insights and charts.</p>
+                <a href="https://github.com/Oldbobb1" target="_blank"> View on GitHub </a>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="skills container" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Языки -->
+            <div class="skills-category">
+                <h3>Languages</h3>
+                <ul class="skills-list">
+                    <li class="skill">Swift</li>
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS</li>
+                    <li class="skill">Markdown</li>
+                </ul>
+            </div>
+    
+            <!-- Инструменты -->
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <ul class="skills-list">
+                    <li class="skill">Xcode</li>
+                    <li class="skill">VSCode</li>
+                    <li class="skill">Figma</li>
+                    <li class="skill">Swift Package Manager</li>
+                    <li class="skill">Git & GitHub</li>
+                </ul>
+            </div>
+    
+            <!-- Фреймворки -->
+            <div class="skills-category">
+                <h3>Frameworks</h3>
+                <ul class="skills-list">
+                    <li class="skill">UIKit</li>
+                    <li class="skill">SwiftUI</li>
+                    <li class="skill">SnapKit</li>
+                    <li class="skill">JTAppleCalendar</li>
+                    <li class="skill">Cocoa Touch & CocoaPods</li>
+                </ul>
+            </div>
+    
+            <!-- Концепции -->
+            <div class="skills-category">
+                <h3>Concepts</h3>
+                <ul class="skills-list">
+                    <li class="skill">MVC</li>
+                    <li class="skill">OOP</li>
+                    <li class="skill">SOLID</li>
+                    <li class="skill">Swift Style Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/Oldbobb1">
+                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"" alt="GitHub"/>
+            </a>
+            <a href="mailto:therromanov@gmail.com">
+                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+            </a>
+            <a href="https://linkedin.com/in/yourusername">
+                <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+            </a>
+            <a href="https://t.me/Oldbobb1"target="_blank">
+                <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
+            </a>
+        </div>
+    </section>
 </body>
-</html> 
-
-
-
-
-
-
-  
+</html>
