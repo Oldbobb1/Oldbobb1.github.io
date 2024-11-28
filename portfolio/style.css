@@ -130,7 +130,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 175, 64, 0.8);
 /* Контейнер для столбцов */
 .about-container {
     display: flex; /* Горизонтальное расположение */
-    /* flex-wrap: wrap;  */
+    flex-wrap: wrap; 
     gap: 30px; /* Расстояние между колонками */
     justify-content: center; /* Выравнивание по центру */
     /* max-width: 1200px; */
@@ -215,6 +215,7 @@ font-size: 1.8rem;
     margin-bottom: 5px;
     font-size: 1.1rem; /* Уменьшен размер заголовка */
     color: #ffaf40;
+
 }
 
 .project-card p {
@@ -276,6 +277,7 @@ font-size: 1.8rem;
     color: #ffc780;
     font-size: 1.5rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 /* Список навыков */
