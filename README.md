@@ -1,14 +1,15 @@
-# 🌐 Oldbobb1.github.io
+# 🌐 X-BitRow
 
-This is a repository of my personal website created using **GitHub Pages**.  
-The site is intended to present my portfolio, projects, and other information. ✨
+This is a repository for my personal website created using **GitHub Pages**.  
+The site is intended for blogging. ✨
 
 ## 🛠️ Technologies 
 * 🌟 HTML 
 * 🎨 CSS 
+* 💻 JavaScript
 
-## 🔗 Links
-The site is available at: [Oldbobb1.github.io](https://oldbobb1.github.io)
+<!--## 🔗 Links-->
+<!--The site is available at: [x-bitrow.com](https://www.x-bitrow.com)-->
 
 ## 👤 Author
 [Oldbobb1](https://github.com/Oldbobb1)

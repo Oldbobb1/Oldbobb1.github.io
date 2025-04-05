@@ -1,0 +1,76 @@
+.about-us-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+    min-height: 400px;
+}
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.about-us-tag {
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(0, 255, 255, 0.1);
+    color: var(--dark-theme-color);
+    border-radius: 25px;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    box-shadow: 0 2px 10px var(--dark-theme-color);
+}
+.about-us-content .mini-header {
+    font-weight: bold;
+    color: rgba(0, 208, 208, 6);
+}
+.about-us-content .texting {
+    color: #808080;
+}
+.about-us-more {
+    display: inline-block;
+    color: var(--first-text-color);
+    text-decoration: none;
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+.about-us-more::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+.about-us-image {
+    background: url('../images/logo.JPG') center/cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 4px 15px #0ff;
+}
+/* Theme */
+[data-theme="light"] .about-us-content h2,
+[data-theme="light"] .about-us-content p,
+[data-theme="light"] .about-us-content a {
+    color: #000;
+}
+[data-theme="light"] .about-us-content .mini-header,
+[data-theme="light"] .about-us-content .texting {
+    color: var(--light-theme-color);
+}
+[data-theme="light"] .about-us-tag {
+    background: rgba(190, 190, 190, 1);
+    box-shadow: 0 2px 10px var(--light-theme-color);
+    color: #000;
+}
+[data-theme="light"] .about-us-image {
+    box-shadow: 0 4px 15px var(--light-theme-color);
+}

@@ -1,0 +1,28 @@
+[data-theme="light"] .hero h1 {
+    background: linear-gradient(45deg, #D3D3D3, #191919);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+}
+[data-theme="light"] .glitch::before {
+    text-shadow: -2px 0 #D3D3D3;
+}
+[data-theme="light"] .glitch::after {
+    text-shadow: -2px 0 var(--light-theme-color);
+}
+[data-theme="light"] .hero::before {
+    background: radial-gradient(circle at center,
+            transparent 0%,
+            rgba(211, 211, 211, 1) 70%);
+}
+[data-theme="light"] .hero p,
+[data-theme="light"] .scroll-indicator {
+    color: var(--light-theme-color);
+}
+[data-theme="light"] {
+    --bl-caret: #808080;
+}
+[data-theme="light"] {
+    --caret-color: var(--light-theme-color);
+}

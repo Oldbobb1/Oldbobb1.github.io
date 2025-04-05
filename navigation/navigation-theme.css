@@ -1,0 +1,16 @@
+/* [data-theme="light"] header {
+    background-color: #ffffff;
+} */
+[data-theme="light"] .image span,
+[data-theme="light"] .nav-links a,
+[data-theme="light"] .theme-toggle,
+[data-theme="light"] .lang-menu .selected-lang {
+    color: var(--light-theme-color);
+}
+[data-theme="light"] .image img {
+    filter: drop-shadow(0 0 5px var( --light-theme-color));
+}
+[data-theme="light"] .theme-toggle .fa-sun,
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}

@@ -1,0 +1,78 @@
+.topics {
+    padding: 4rem 2rem;
+    margin: 4rem;
+    border-radius: 25px;
+}
+.topics h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: var(--dark-theme-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+.topic-card {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--first-text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+.topic-card i {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+.topics-grid a:nth-child(1) i {
+    color: var(--first-text-color);
+}
+.topics-grid a:nth-child(2) i {
+    color: #FF5733;
+}
+.topics-grid a:nth-child(3) i {
+    color: #FFD700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8)
+}
+.topics-grid a:nth-child(4) i {
+    color: #000000;
+}
+.topic-card .count {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+/* Theme */
+[data-theme="light"] .topics h2,
+[data-theme="light"] .topics h3,
+[data-theme="light"] .topics-grid a:nth-child(1) i {
+    color: var(--light-theme-color);
+}
+[data-theme="light"] .topic-card {
+    background-color: #C0C0C0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+[data-theme="light"] .topics-grid a:nth-child(2) i {
+    color: #007bff;
+}
+[data-theme="light"] .topics-grid a:nth-child(3) i {
+    color: var(--light-theme-color);
+    text-shadow: none;
+}
+[data-theme="light"] .topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--light-theme-color);
+}

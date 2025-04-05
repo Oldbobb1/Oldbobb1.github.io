@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no" >
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <nav> 
-        <div class="logo">Oldbobbi</div>
-        <ul>
- <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-<div class="prew"> 
-<h1>Welcome</h1>
-<p>This is my blog</p>
-<a href="#about" class="btn"> view more</a>
-</div>
-
-
-<section>
-<div class="about" id="about"> 
-<h1>about </h1>
-
-
-</div>
-
-
-</section>  
-
-
-  <!-- Footer Section -->
-    <footer>
-        <p>&copy; Oldbobbi</p>
-    </footer>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>X-bitRow - Exploring the boundaries of life and the world of technology</title>
+        <link rel="icon" type="image/png" href="images/logo-link.png">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="/navigation/navigation.js"></script>
+        <link rel="stylesheet" href="/navigation/navigation.css">
+        <link rel="stylesheet" href="/navigation/navigation-theme.css">
+        <link rel="stylesheet" href="/index-style/style.css">
+        <link rel="stylesheet" href="/index-style/hero.css">
+        <link rel="stylesheet" href="/index-style/hero-theme.css">
+        <link rel="stylesheet" href="/index-style/about-us-post.css">
+        <link rel="stylesheet" href="/index-style/latest-posts.css">
+        <link rel="stylesheet" href="/index-style/topics-posts.css">
+        <link rel="stylesheet" href="/footers/main-footer-style.css">
+        <script src="/translate/translate.js"></script>
+        <script src="/utils/updateMaxWidth.js"></script>
+        <script src="/utils/loadSection.js"></script>
+    </head>
+    <body>
+        <main>
+            <div id="hero"></div>
+            <section class="about-us-post" id="About-us">
+                <div class="about-us-content">
+                    <span class="about-us-tag" id="about-us-tag"></span>
+                    <p>
+                        <span class="mini-header">X-bitRow</span>
+                        <span class="texting" id="about-us-text"></span>
+                    </p>
+                    <a href="/about-us/about-us.html" class="about-us-more"></a>
+                </div>
+                <div class="about-us-image"></div>
+            </section>
+            <script src="/utils/uploadText.js"></script>
+            <div id="latest-posts"></div>
+            <div id="topics-posts"></div>
+        </main>
+        <div id="main-footer"></div>
+    </body>
 </html>
-
