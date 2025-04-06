@@ -7,6 +7,7 @@ header {
     top: 0;
     z-index: 1000;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -170,4 +171,18 @@ nav {
 }
 .lang-menu a:hover::after {
     width: 65%;
+}
+
+@media(max-width: 599px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+    .image {
+        gap: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .image img {
+        width: 25px;
+        height: 25px;
+    }
 }
