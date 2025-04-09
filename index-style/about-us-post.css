@@ -74,3 +74,34 @@
 [data-theme="light"] .about-us-image {
     box-shadow: 0 4px 15px var(--light-theme-color);
 }
+
+
+@media(max-width: 599px) {
+    .about-us-post {
+        gap: 2rem;
+        margin: 2rem auto;
+        max-width: 600px;
+        min-height: 200px;
+    }
+    .about-us-content {
+        padding-left: 0.5rem;
+    }
+    .about-us-tag {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .about-us-content .mini-header {
+        font-weight: bold;
+        color: rgba(0, 208, 208, 6);
+    }
+    .about-us-content .texting {
+        color: #808080;
+    }
+    .about-us-more {
+        font-size: 2.4rem;
+    }
+    .about-us-image {
+        width: 250px;
+        height: 250px;
+    }
+}

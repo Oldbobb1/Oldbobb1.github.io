@@ -173,6 +173,7 @@ nav {
     width: 65%;
 }
 
+
 @media(max-width: 599px) {
     header {
         padding: 0.5rem 1rem;
@@ -184,5 +185,63 @@ nav {
     .image img {
         width: 25px;
         height: 25px;
+    }
+
+    .image svg path {
+        transition: all 0.1s ease;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 0;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 5;
+        }
+    }
+    .image:hover svg path {
+        stroke-dashoffset: 50;
+        filter: brightness(0.5);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    .nav-links a:hover::after {
+        width: 50%;
+    }
+    .theme-toggle {
+        background: none;
+        border: none;
+        color: var(--dark-theme-color);
+        cursor: pointer;
+        margin-top: 5px;
+        font-size: 0.5rem;
+        transition: color 0.3s ease;
+    }
+    .selected-lang {
+        margin-top: 5px;
+    }
+    .selected-lang i:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .lang-menu ul li a {
+        width: 60px;
+    }
+    .lang-menu ul li a:before {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    .lang-menu:hover ul {
+        display: block;
+    }
+    .lang-menu a:hover::after {
+        width: 65%;
     }
 }
