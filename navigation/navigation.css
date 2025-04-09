@@ -206,10 +206,10 @@ nav {
     .nav-links {
         display: flex;
         list-style: none;
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
     }
     .nav-links a:hover::after {
         width: 50%;
@@ -220,7 +220,7 @@ nav {
         color: var(--dark-theme-color);
         cursor: pointer;
         margin-top: 5px;
-        font-size: 0.5rem;
+        font-size: 1rem;
         transition: color 0.3s ease;
     }
     .selected-lang {
