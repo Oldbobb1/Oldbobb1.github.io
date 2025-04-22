@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS Блог</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f2f2f7;
+      color: #1c1c1e;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: white;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #007aff;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .articles {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .article {
+      background-color: white;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .article h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+      gap: 0.5rem;
+    }
+
+    .pagination a {
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      background-color: white;
+      color: #007aff;
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .pagination a.active {
+      background-color: #007aff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>iOS Блог</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Разделы</h2>
+      <ul id="category-list">
+        <li><a data-category="all">Все</a></li>
+        <li><a data-category="UIKit">UIKit</a></li>
+        <li><a data-category="SwiftUI">SwiftUI</a></li>
+        <li><a data-category="Architecture">Architecture</a></li>
+        <li><a data-category="Best Practices">Best Practices</a></li>
+        <li><a data-category="App Design">App Design</a></li>
+        <li><a data-category="Xcode">Xcode</a></li>
+      </ul>
+    </aside>
+
+    <main class="articles">
+      <div class="article" data-page="1" data-category="UIKit">
+        <h3>Создание UI без Storyboard</h3>
+        <p>Как создавать интерфейсы полностью программно с использованием UIKit и SnapKit.</p>
+      </div>
+      <div class="article" data-page="1" data-category="SwiftUI">
+        <h3>SwiftUI vs UIKit</h3>
+        <p>Когда использовать SwiftUI, а когда UIKit — практическое сравнение подходов.</p>
+      </div>
+      <div class="article" data-page="1" data-category="Architecture">
+        <h3>MVVM на практике</h3>
+        <p>Как внедрить MVVM и какие ошибки лучше избегать при проектировании.</p>
+      </div>
+      <div class="article" data-page="1" data-category="Best Practices">
+        <h3>Лучшие фреймворки для iOS</h3>
+        <p>Подборка мощных и лёгких библиотек, которые стоит попробовать.</p>
+      </div>
+      <div class="article" data-page="1" data-category="UIKit">
+        <h3>Elementbuilder</h3>
+        <p>как сделать фрейм и выиграть</p>
+      </div>
+      <div class="article" data-page="1" data-category="SwiftUI">
+        <h3>Swiftui на айфон</h3>
+        <p>когда это стало мейнстримом</p>
+      </div>
+    </main>
+  </div>
+
+  <div class="pagination">
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <!-- <a href="#" class="active">2</a> -->
+    <a href="#">3</a>
+    <a href="#">4</a>
+  </div>
+
+  <script>
+    const articles = document.querySelectorAll('.article');
+    const pageLinks = document.querySelectorAll('.pagination a');
+    const categoryLinks = document.querySelectorAll('#category-list a');
+
+    let currentPage = "1";
+    let currentCategory = "all";
+
+    function showArticles() {
+      articles.forEach(article => {
+        const articlePage = article.getAttribute('data-page');
+        const articleCategory = article.getAttribute('data-category');
+
+        const matchesPage = articlePage === currentPage;
+        const matchesCategory = currentCategory === "all" || articleCategory === currentCategory;
+
+        article.style.display = matchesPage && matchesCategory ? 'block' : 'none';
+      });
+    }
+
+    function updatePagination(page) {
+      currentPage = page;
+      pageLinks.forEach(link => {
+        link.classList.toggle('active', link.textContent === currentPage);
+      });
+      showArticles();
+    }
+
+    function updateCategory(category) {
+      currentCategory = category;
+      currentPage = "1"; // сбрасываем на первую страницу при смене категории
+      showArticles();
+    }
+
+    pageLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        updatePagination(link.textContent);
+      });
+    });
+
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        updateCategory(link.getAttribute('data-category'));
+      });
+    });
+
+    // Инициализация — первая страница и все категории
+    showArticles();
+  </script>
+</body>
+</html>
