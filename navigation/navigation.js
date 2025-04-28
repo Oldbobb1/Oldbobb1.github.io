@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <li>
                     <a id="about-us" href="${isMainPage ? '/about-us/about-us.html' : '../about-us/about-us.html'}"></a>
                 </li>
-                <li>
+            <!--    <li>
                     <a id="contact" href="${isMainPage ? '#Contact' : '../index.html#Contact'}"></a>
-                </li> 
+                </li>  -->
                 <li>
                     <button id="theme-toggle" class="theme-toggle">
                         <i class="fas fa-sun"></i>
