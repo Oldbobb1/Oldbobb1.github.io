@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         <nav>
             <div class="image">
                 <img src="${isMainPage ? 'images' : '../images'}/logo.JPG" alt="DarkSyntax Logo" width="50" height="50"> 
-                <!-- <span>DarkSyntax</span> --> 
                 <span>X-bitRow</span>
             </div>
             <ul class="nav-links">
